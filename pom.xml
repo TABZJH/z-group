@@ -21,11 +21,17 @@
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.24</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <repositories>
-        <repository>
-            <id>mavenCentral</id>
-            <url>https://repo1.maven.org/maven2/</url>
-        </repository>
+
     </repositories>
 
     <build>
