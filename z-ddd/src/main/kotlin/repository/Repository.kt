@@ -4,7 +4,7 @@ import domain.Aggregate
 import domain.Identifier
 
 
-interface Repository<A : Aggregate<ID>, ID : Identifier> {
+interface Repository<A : Aggregate<ID?>, ID : Identifier?> {
 
     /**
      * 将一个Aggregate附属到一个Repository，让它变为可追踪。
